@@ -8,10 +8,37 @@
 
 import UIKit
 
+public enum AdProvider {
+    case facebook(String)
+    case google(String)
+}
+
 public final class AdsManagerViewController: UIViewController {
+    fileprivate var adManager: AdManager?
     
-    public init() {
+    open var provider: AdProvider = .google("Google") {
+        didSet {
+            guard let adManager = self.adManager else {
+                return
+            }
+            
+            adManager.provider = provider
+        }
+    }
+    
+    public init(with apiKeys: [String: String]) {
         super.init(nibName: nil, bundle: nil)
+        self.adManager = AdManager(with: self, apiKeys)
+    }
+    
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        guard let adManager = self.adManager else {
+            return
+        }
+        
+        createUI()
+        adManager.update()
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -24,7 +51,12 @@ public final class AdsManagerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
+    func createUI() {
+        guard let adManager = self.adManager else {
+            return
+        }
+        self.view.layer.addSublayer(previewLayer)
+    }
 
     /*
     // MARK: - Navigation

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		73406AD72247E5B1003FA97F /* AdsManagerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 73406AD52247E5B1003FA97F /* AdsManagerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7359F8432247E9880096BCD2 /* AdsManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7359F8422247E9880096BCD2 /* AdsManagerViewController.swift */; };
+		7359F8452247F30B0096BCD2 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7359F8442247F30B0096BCD2 /* AdManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		73406AD52247E5B1003FA97F /* AdsManagerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdsManagerFramework.h; sourceTree = "<group>"; };
 		73406AD62247E5B1003FA97F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7359F8422247E9880096BCD2 /* AdsManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsManagerViewController.swift; sourceTree = "<group>"; };
+		7359F8442247F30B0096BCD2 /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 				73406AD52247E5B1003FA97F /* AdsManagerFramework.h */,
 				7359F8422247E9880096BCD2 /* AdsManagerViewController.swift */,
 				73406AD62247E5B1003FA97F /* Info.plist */,
+				7359F8442247F30B0096BCD2 /* AdManager.swift */,
 			);
 			path = AdsManagerFramework;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7359F8452247F30B0096BCD2 /* AdManager.swift in Sources */,
 				7359F8432247E9880096BCD2 /* AdsManagerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
