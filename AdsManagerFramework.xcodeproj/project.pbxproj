@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		73406AD72247E5B1003FA97F /* AdsManagerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 73406AD52247E5B1003FA97F /* AdsManagerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7359F8432247E9880096BCD2 /* AdsManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7359F8422247E9880096BCD2 /* AdsManagerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73406AD22247E5B1003FA97F /* AdsManagerFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdsManagerFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73406AD52247E5B1003FA97F /* AdsManagerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdsManagerFramework.h; sourceTree = "<group>"; };
 		73406AD62247E5B1003FA97F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7359F8422247E9880096BCD2 /* AdsManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsManagerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				73406AD52247E5B1003FA97F /* AdsManagerFramework.h */,
+				7359F8422247E9880096BCD2 /* AdsManagerViewController.swift */,
 				73406AD62247E5B1003FA97F /* Info.plist */,
 			);
 			path = AdsManagerFramework;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					73406AD12247E5B1003FA97F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7359F8432247E9880096BCD2 /* AdsManagerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		73406ADB2247E5B1003FA97F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.faziapp.AdsManagerFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		73406ADC2247E5B1003FA97F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
